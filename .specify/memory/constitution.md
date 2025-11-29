@@ -1,55 +1,53 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report -->
+<!-- Version change: None (Initial Constitution) -->
+<!-- Modified principles: All (Initial Constitution) -->
+<!-- Added sections: All (Initial Constitution) -->
+<!-- Removed sections: None -->
+<!-- Templates requiring updates:
+✅ .specify/templates/plan-template.md
+✅ .specify/templates/spec-template.md
+✅ .specify/templates/tasks-template.md
+✅ .specify/templates/commands/sp.analyze.md
+✅ .specify/templates/commands/sp.constitution.md
+✅ .specify/templates/commands/sp.implement.md
+✅ .specify/templates/commands/sp.phr.md
+✅ .specify/templates/commands/sp.plan.md
+✅ .specify/templates/commands/sp.specify.md
+✅ .specify/templates/commands/sp.tasks.md
+-->
+<!-- Follow-up TODOs: None -->
+# Physical AI & Humanoid Robotics Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Curriculum Adherence
+Every chapter and module MUST strictly follow the defined book structure and curriculum breakdown provided by Panaversity. No deviation from the specified modules, topics, or weekly goals is permitted.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Technical Accuracy & Code First
+Content MUST be technically accurate, authoritative, and provide practical, hands-on code examples (Python/C++/ROS 2 launch files) for every concept. Theoretical explanations must be immediately followed by demonstrable code.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Docusaurus & RAG Compatibility
+All output content MUST be in Docusaurus Markdown (`.md` / `.mdx`) format. Content MUST be structured to inherently support Retrieval-Augmented Generation (RAG) chatbot integration, personalization layers, and real-time Urdu translation toggles.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Hardware Emphasis
+The "Hardware Requirements" section MUST be critical, explicitly emphasizing NVIDIA RTX 4070 Ti+ (12GB VRAM min) for Isaac Sim, NVIDIA Jetson Orin Nano/NX for Edge AI, Intel RealSense sensors, and specific humanoid robot platforms or "Sim-to-Real" proxies.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Visual Descriptions
+Where diagrams or visual aids are necessary, detailed textual descriptions MUST be provided to enable later generation or insertion of graphical assets without ambiguity.
 
-### [PRINCIPLE_6_NAME]
+### VI. Personalization & Assessment
+Chapters MUST be structured with introductory blocks that can be easily swapped based on user background (e.g., "If you are a Software Engineer..." vs "If you are a Hardware Engineer..."). Project milestones and assessment points (e.g., ROS 2 package creation, Isaac perception pipeline) MUST be included at the end of relevant modules.
 
+## Technical Stack & Formatting
 
-[PRINCIPLE__DESCRIPTION]
+Content MUST be authored with awareness of its integration into a platform supporting RAG Chatbot integration (OpenAI Agents/Neon Postgres/Qdrant), personalization (based on user Hardware/Software background), and real-time Urdu Translation toggles.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Book Structure & Curriculum
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The textbook MUST strictly follow the module breakdown: Preface, Hardware Requirements, Module 1 (The Robotic Nervous System), Module 2 (The Digital Twin), Module 3 (The AI-Robot Brain), Module 4 (Vision-Language-Action). Each module's topics and goals MUST be meticulously covered as defined.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution supersedes all other practices and guidelines within the project. Any amendments to this constitution require formal documentation, explicit approval from Panaversity curriculum stakeholders, and a comprehensive migration plan for affected content and tooling. All generated content and development workflows MUST verify compliance with these principles. Complexity in content or code MUST be justified against the principle of simplicity.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-11-28 | **Last Amended**: 2025-11-28
